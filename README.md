@@ -24,6 +24,21 @@ Users should be able to:
 
 ## My process
 
+- Start by adding some CSS defaults
+  ```
+    * {
+      box-sizing: border-box;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      font-family: 'Kumbh Sans';
+      font-size: 12px;
+    }
+  ```
+- Design HTML that will work in all layouts
+  ![](./design/html-design.jpg)
+
 ### Built with
 
 - HTML
