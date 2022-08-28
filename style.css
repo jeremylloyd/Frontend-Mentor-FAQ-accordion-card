@@ -1,0 +1,27 @@
+:root {
+  --theme-dark: hsl(238, 29%, 16%);
+  --theme-red: hsl(14, 88%, 65%);
+  --theme-violet: hsl(273, 75%, 66%);
+  --theme-blue: hsl(240, 73%, 65%);
+  --theme-darkgrey: hsl(237, 12%, 33%);
+  --theme-grey: hsl(240, 6%, 50%);
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Kumbh Sans';
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
