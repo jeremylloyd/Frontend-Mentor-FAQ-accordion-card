@@ -93,6 +93,10 @@ li {
   transition: max-height 300ms;
 }
 
+li img {
+  transition: transform 300ms;
+}
+
 .expanded {
   max-height: 150px;
 }

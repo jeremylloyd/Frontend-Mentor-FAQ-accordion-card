@@ -46,3 +46,12 @@ Users should be able to:
 - A bit of JS
 
 ### What I learned
+
+- CSS state transitions
+  - Implement transition properties on the base elements rather than the pseudo-elements to ensure that it applies in both directions
+  - To expand the height of an element using CSS, you can adjust the max-height
+- `background-attachment: fixed` results in the background image not moving when the user scrolls
+- Absolute positioning always seems to result in a mess. But absolute positioned elements can 'stick out' and look pretty cool in the process
+- Make text impossible to select with `user-select: none;`
+- Flip images vertically with `scaleY(-1)`
+- If there are items that need to be set to `display: none` between mobile and desktop layouts, use `.desktop` and `.mobile` classes to simplify the media query
