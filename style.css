@@ -13,9 +13,6 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-  font-family: 'Kumbh Sans';
-  font-size: 12px;
-  /* border: dashed 1px red; */
 }
 
 body {
@@ -26,6 +23,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Kumbh Sans';
+  font-size: 12px;
 }
 
 #deco-box {
@@ -43,10 +42,13 @@ main {
   background-color: white;
   max-width: 335px;
   margin-top: 110px;
+  min-height: 530px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  border-radius: 20px;
+  padding: 0px 20px 20px;
 }
 
 aside {
@@ -76,16 +78,63 @@ main > section {
   flex-direction: column;
 }
 
-.attribution {
-  font-size: 8px;
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 135px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--theme-dark);
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-  font-size: inherit;
+li {
+  max-height: 48px;
+  overflow: hidden;
+  transition: max-height 100ms ease-in-out;
 }
 
-@media screen and (min-width: 1000px) {
+.expanded {
+  max-height: 150px;
+}
+
+.expanded h2 {
+  font-weight: 700;
+  color: hsl(240, 17%, 22%);
+}
+
+.expanded img {
+  transform: scaleY(-1);
+}
+
+.q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: hsl(236, 7%, 40%);
+}
+
+.q-header:hover {
+  color: var(--theme-red);
+}
+
+h2 {
+  padding: 14px 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+p {
+  color: var(--theme-grey);
+  line-height: 1.25rem;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: solid 1px hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 925px) {
   .mobile {
     display: none;
   }
@@ -95,16 +144,19 @@ main > section {
   }
 
   main {
-    background-color: white;
     max-width: 925px;
-    min-height: 500px;
+    min-height: 510px;
     margin-top: unset;
     align-items: flex-start;
     overflow: hidden;
   }
 
+  h1 {
+    margin-top: unset;
+  }
+
   section {
     margin-left: 400px;
-    padding: 75px;
+    padding: 75px 75px 0px;
   }
 }
