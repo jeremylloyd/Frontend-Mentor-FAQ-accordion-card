@@ -42,7 +42,7 @@ main {
   background-color: white;
   max-width: 335px;
   margin-top: 110px;
-  min-height: 530px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +90,7 @@ h1 {
 li {
   max-height: 48px;
   overflow: hidden;
-  transition: max-height 100ms ease-in-out;
+  transition: max-height 300ms;
 }
 
 .expanded {
@@ -112,6 +112,7 @@ li {
   align-items: center;
   cursor: pointer;
   color: hsl(236, 7%, 40%);
+  user-select: none;
 }
 
 .q-header:hover {
