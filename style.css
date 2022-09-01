@@ -94,11 +94,11 @@ li {
 }
 
 li img {
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
 }
 
 .expanded {
-  max-height: 150px;
+  max-height: 116px;
 }
 
 .expanded h2 {
